@@ -7,7 +7,7 @@ for (let i = 0; i < squaresNumber; i++) {
     squares.classList.add('square');
 
     squares.addEventListener('mouseover', () => setColor(squares));
-    squares.addEventListener('mouseover', () => removeColor(squares));
+    squares.addEventListener('mouseleave', () => removeColor(squares));
 
     board.append(squares);
 }
